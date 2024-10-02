@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #4338ca; /* Indigo-700 */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #6366f1; /* Indigo-500 */
+  border-radius: 3px;
+}
+
+/* For Firefox */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #6366f1 #4338ca;
+}
+
+body, #root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Existing styles ... */
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
